@@ -1,0 +1,7 @@
+Task:
+    The password for the next level is stored in the file data.txt, which contains base64 encoded data
+
+Notes:
+    base64 is usually padded with "==" at the end. Only these characters are used by the encryption: “A” to “Z”, “a” to “z”, “0” to “9”, “+” and “/”.
+    
+Password: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR

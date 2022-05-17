@@ -1,0 +1,9 @@
+Task:
+    Find password but not even Google can find
+
+Solution:
+    We can see how to stop Google from finding a directory, by using robots.txt
+    In robots.txt we the directory /s3cr3t
+
+Password: 
+    natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ

@@ -1,0 +1,8 @@
+How to deal with files that start with -
+
+method 1: use -- 
+method 2: use ./filename
+
+password: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9 
+
+https://linux-tips.com/t/dashed-filename-in-linux/188

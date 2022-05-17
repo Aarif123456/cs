@@ -1,0 +1,10 @@
+Task:
+    A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
+
+Command:
+    ls -la  /etc/cron.d/ # we see a file called /etc/cron.d/cronjob_bandit22
+    vim  /etc/cron.d/cronjob_bandit22 # t we see a file called tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+    vim  /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv # has a password
+
+Password: 
+    Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI 

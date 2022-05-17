@@ -1,0 +1,17 @@
+Task:
+    A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
+
+    NOTE: Looking at shell scripts written by other people is a very useful skill. The script for this level is intentionally made easy to read. If you are having problems understanding what it does, try executing it to see the debug information it prints.
+
+Command:
+    ls -la  /etc/cron.d/
+    vim /usr/bin/cronjob_bandit23.sh # hard to figure out
+    /usr/bin/cronjob_bandit23.sh # so we run the script and it gives our same password 
+    # but we see how it does it mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+    # so just copy it and change it
+    mytarget=$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)
+
+
+Password: jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+
+next level password: UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ  

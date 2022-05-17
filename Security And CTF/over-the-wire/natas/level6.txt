@@ -1,0 +1,9 @@
+Task:
+    We have to submit a secret password to get the password
+
+Solution:
+    I overthought the shit out of this trying to figure out where I messed the Hogwarts website. This was simply just putting the password somewhere visible to outsiders.
+    e.g. http://natas6.natas.labs.overthewire.org/includes/secret.inc
+    FOEIUWGHFEEUHOFUOIU
+
+Password: natas7:7z3hEENjQtflzgnT29q7wAvMNfZdh0i9

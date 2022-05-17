@@ -1,0 +1,12 @@
+Task:
+    Good job getting a shell! Now hurry and grab the password for bandit27!
+
+Command:
+    Get back into vim
+    :set shell=/bin/bash
+    :set shell ? # confirm it changed
+    :!ls # view the file
+    :!~/bandit27-do  cat /etc/bandit_pass/bandit27
+    
+Password: 
+3ba3118a22e93127a4ed485be72ef5ea

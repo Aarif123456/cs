@@ -1,0 +1,8 @@
+Task:
+    We gotta pretend like we came here from another website
+
+Solution:
+    Just use burp suite to change referrer
+
+Password: 
+    natas5:iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq

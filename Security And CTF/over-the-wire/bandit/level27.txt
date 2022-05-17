@@ -1,0 +1,8 @@
+Task:
+    There is a git repository at ssh://bandit27-git@localhost/home/bandit27-git/repo. The password for the user bandit27-git is the same as for the user bandit27.
+    
+Command:
+    git clone ssh://bandit27-git@bandit.labs.overthewire.org:2220/home/bandit27-git/repo
+    
+Password: 0ef186ac70e04ea33b4c1853d2526fa2
+

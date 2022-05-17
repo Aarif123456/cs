@@ -1,0 +1,3 @@
+Find hidden . files
+just use ls -a
+password: pIwrPrtPN36QITSp3EQaw936yaFoFgAB 

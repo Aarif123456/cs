@@ -1,0 +1,8 @@
+Task:
+    Find password but right click is blocked
+
+Solution:
+    Just view page source
+
+
+Password: ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi

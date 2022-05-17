@@ -1,0 +1,7 @@
+Task: We have two links, e.g. about and home and the hint says password is in /etc/natas_webpass/natas8
+
+Solution:
+    Go to http://natas7.natas.labs.overthewire.org/index.php?page=/etc/natas_webpass/natas8
+
+Password: 
+    natas8:DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe 

@@ -1,0 +1,8 @@
+Task:
+    Find password but nothing is on page
+
+Solution:
+    We notice a image on the page and follow it. The url is files/bla.img - so we just go to "/files" and notice users.txt
+
+Password: 
+    sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14

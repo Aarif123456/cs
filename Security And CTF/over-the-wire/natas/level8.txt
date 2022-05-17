@@ -1,0 +1,8 @@
+Task:
+    We have another challenge where we get access to the JavaScript
+
+Solution:
+    Wrote a reverse script in Python
+
+Password: 
+    natas9:W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl

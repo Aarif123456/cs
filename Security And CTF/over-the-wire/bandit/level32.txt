@@ -1,0 +1,7 @@
+Task:
+    After all this git stuff its time for another escape. Good luck!
+    
+Command:
+    $0 # gets u out of the upper-shell
+Password: 
+    c9c3199ddf4121b10cf581a98d51caee

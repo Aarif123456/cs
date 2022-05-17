@@ -1,0 +1,8 @@
+Task:
+    Pretend to be logged in
+
+Solution:
+    Just edit cookie value
+
+Password: 
+    natas6:aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1

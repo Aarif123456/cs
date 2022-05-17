@@ -1,0 +1,7 @@
+Task: You can find the password for the next level on this page. 
+
+Solution:
+    Just inspect and find the password in the comment
+
+Username: natas0
+Password: gtVrDuiDfck831PqWsLEZy5gyDz1clto 

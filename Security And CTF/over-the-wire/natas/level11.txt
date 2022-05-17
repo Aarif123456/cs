@@ -1,0 +1,22 @@
+Task:
+    Looking at the source code we have json_enocded array which was encrypted by an xor key.
+
+    e.g.
+    let pt = the data
+    let k = the xor key
+    let cp = the cipher text - the encrypted data
+
+    cp = pt ^ k
+    cp ^ k = pt ^ k ^ k
+    k ^ cp = pt
+    k ^ cp ^ cp = pt^ cp
+    k = pt^ cp
+    k = cp ^ pt
+
+
+Solution:
+    Find the xor key as described above. Then create the desired data and encrypt using the same algorithm.
+
+Password: 
+    natas12 is EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3
+
