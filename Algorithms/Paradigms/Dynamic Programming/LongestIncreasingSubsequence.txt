@@ -1,0 +1,41 @@
+DP O(n^2)
+- We can create an array that holds the size of the increasing subsequence.
+- When we come across a new number, we can go back and find the largest pile to put the new number.
+
+Invariant: dp[i] holds the longest length of the increasing subsequence, where nums[i] is the last element.
+
+Initialization: At index 0, the biggest array we can have is of size 1. So, the size is correct. And, there is only one element. So it is in increasing order.
+
+Maintenance: During each step, we look at each of the existing arrays and add this number to the largest valid array.
+The new array is in increasing order because every element in dp[j] is in increasing order and nums[i]>nums[j].
+Since we have exhaustively looked at valid arrays before i. By picking the largest element for dp[i], we must end up with the longest increasing subsequence.
+
+Termination: At index n-1, the same logic holds. So, dp[n-1] contains the Longest Increasing Subsequence ending with n-1 at the end.
+
+Finally, we return the longest value out of all possible piles, which gives us the longest increasing subsequence.
+
+________________________________________________________________
+Okay, now is there any redundant work we do with the DP solution?
+We go through and look at all values at the top of each pile, but if we know a pile can be made of size n. Then we don't need to look at any pile smaller then n. Moreover, if we know a pile can be made of size n, with a value of x as our final value then any value greater then x can create a pile of size n+1. Lastly, we want to minimize the value of x, so we can maximize the possible range of values to create a pile of n+1. 
+
+If this doesn't seem intuitive, a hint like "what if you try tracking the smallest value needed to create an increasing sub-sequence of length x." - wouldn't ruin the question
+
+Neither would an like for the hint like
+
+a = [2, 4, 10, 11]  x = 8
+So, 2 represents the pile with just 2.
+4 represents an array with some number less then 4, which ends with 4 e.g [2,4] or [3,4]
+
+Okay, so we can see 8 can go on top of 4. And, 8 is less then 10. So, our new array is 
+a= [2,4,8,11]
+
+Me: 
+Okay, yea so we can create an empty array. 
+
+And, then we can see if the top value is bigger then the current value. If it is we can put it on top of our pile. Otherwise, we can search through our existing piles and add the value. 
+Our array is always going to be in ascending order because we only only add a new value when we find a number bigger then the previous max. And, a value in the array can only be replaced by a smaller value. So, we can do a binary search.
+
+
+
+
+

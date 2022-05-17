@@ -1,0 +1,1 @@
+Algorithms independent of any data structure that are created for a niche problem

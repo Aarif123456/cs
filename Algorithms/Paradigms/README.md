@@ -1,0 +1,1 @@
+Algorithms based on some kind of paradigm

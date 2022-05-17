@@ -1,0 +1,29 @@
+DP is just memoized brute-force for the most part
+
+tabulation is just induction - figure out how to state the problem so if u know problem n - u can solve problem n+1
+
+- state brute-force - wrap ur head around how a full solution looks like and helps avoid premature pattern matching - like when u go this reminds of this problem, but like it's differs in an important way...
+- break the problem down into possible subproblems  - usually the hardest part
+- brain storm different ideas for solving some of these problem -see if a at most polynomial time algorithm jumps out - this gets easier over time 
+- define recurrence -  figure out a base case - and see how u can use the n-1th solution to solve n - once u know u r solving the right problem u don't think about this too much 
+- figure out what problems overlap - then memoize overlapping problem or figure out bottom-up approach  - usually pretty easy - except a few CP or exam problems designed to trip u up - For most DP problems u will see on interview this won't be tough once u have the right sub-problem 
+- practice: https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
+
+
+
+https://leetcode.com/list/55ac4kuc - (Min - max path to target)
+https://leetcode.com/list/55ajm50i - (distinct ways)
+https://leetcode.com/list/55aj8s16 - (merging intervals)
+https://leetcode.com/list/55afh7m7 - (DP on strings)
+https://leetcode.com/list/55af7bu7 - (decision making)
+
+I would clone them on ur LC accounts for reference
+
+
+
+
+Not done
+https://leetcode.com/problems/find-the-shortest-superstring/solution/
+https://leetcode.com/problems/find-the-shortest-superstring/discuss/194932/Travelling-Salesman-Problem
+https://leetcode.com/problems/shortest-path-visiting-all-nodes/ - more TSP - use BFS with DP
+

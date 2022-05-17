@@ -1,0 +1,97 @@
+
+
+let g denote values greater then our guess 
+let l denote values smaller then our equal guess
+let x = duplicated number
+
+In the solution we check if lCount < guess => 10<5 // and see if this gives us 
+But, my initial idea was to compare lCount to gCount 
+
+e.g. 
+
+[1,2,3,4,5,6,7,4,4,4]
+r = 10 
+l = 0
+guess = 5 // (l+r)/2
+
+[l,l,l,l,l,g,g,l,l,l]
+lCount = 8
+gCount = 2
+
+lCount >= gCount: so go toward lCount
+----------------------------------------
+
+[1,2,3,4,5,6,7,4,4,4]
+r = 5
+l = 0
+guess = 2 // (l+r)/2
+
+[l,l,g,g,g,g,g,g,g,g]
+lCount = 2
+gCount = 8
+
+lCount < gCount: so go toward gCount
+----------------------------------------
+[1,2,3,4,5,6,7,4,4,4]
+r = 5
+l = 3
+guess = 4 // (l+r)/2
+
+[l,l,l,l,g,g,g,l,l,l]
+lCount = 7
+gCount = 3
+
+lCount >= gCount: so go toward lCount
+----------------------------------------
+
+[1,2,3,4,5,6,7,4,4,4]
+r = 5
+l = 5
+guess = 5 // (l+r)/2
+
+
+
+-----------------------------------------------------------
+New approach
+[1,2,3,4,5,6,7,4,4,4]
+r = 10 
+l = 0
+guess = 5 // (l+r)/2
+
+[l,l,l,l,l,g,g,l,l,l]
+lCount = 8
+lCount <= guess // 8>5 so false so go toward lCount
+-----------------------------------------------------------
+
+[1,2,3,4,5,6,7,4,4,4]
+r = 5
+l = 0
+guess = 2 // (l+r)/2
+
+[l,l,g,g,g,g,g,g,g,g]
+lCount = 2
+lCount <= guess  // 2<=2 so true so go toward gCount
+-------------------------------------------------------
+
+
+[1,2,3,4,5,6,7,4,4,4]
+r = 5
+l = 3
+guess = 4 // (l+r)/2
+
+[l,l,l,l,g,g,g,l,l,l]
+lCount = 7
+lCount <= guess  // 7>4 so false so go toward lCount
+-------------------------------------------------------
+
+
+[1,2,3,4,5,6,7,4,4,4]
+r = 4
+l = 3
+guess = 3 // (l+r)/2
+
+[l,l,l,g,g,g,g,g,g,g]
+lCount = 3
+lCount <= guess  // 3<=3 so true so go toward gCount
+-------------------------------------------------------
+l=r=4 - which is correct

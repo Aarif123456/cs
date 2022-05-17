@@ -1,0 +1,11 @@
+3 cases
+1. empty list- new node points to self
+2. node new head - if data is less than head- our new node is our head
+    - create pointer to go around till next element is head 
+        - make that element point to our node 
+        - make this node point to our head 
+        - make this node our head
+3. normal case
+    - find spot where data is less than our current node
+    - now go from head - till our next node is the node we found in the last step
+    - same steps - from case 2

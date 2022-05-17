@@ -1,0 +1,52 @@
+Approaching techniques
+1. Reduction - match to known algorithm/pattern
+    - Ask yourself if you have seen something similar and see if you can apply a similar approach
+    - Solve an easier version of the problem
+        - Try to precompute some information like prefix or suffix sums
+        - Sorting - often makes the problem easier
+    - if a data structure is given, think of common algorithms associated with the data structure - e.g. LinkedList - have u tried fast and slow pointers?
+    - Think of common paradigms: 
+        - 1. brainstorm possible sub problems
+        - 2. Solve these smaller problems - if u can't maybe go back to step 1
+        - 3. define recurrence -  figure out a base case - and see how u can use the n-1th solution to solve n 
+        - 4. Figure out the paradigm
+            - If problem overlap - you can apply DP
+            - If optimal solution to subproblems leads to global optimum  it's greedy
+            - Otherwise if u can combine the solution to get the answer - it's divide and conquer
+    - if this problem is NP-complete or you need all paths you'll need to brute-force- if so, you'll probably need to brute-force and apply DP - or manually enumerate all cases 
+2. Brainstorm data structure, then see if you can find an appropriate algorithm
+    - Graph Modelling - can you model the problem on a graph? Can you think of a graph-based algorithm to help?
+    - HashSet - trying to see if a HashSet can speed up some step
+    - Tries - 
+    - Heaps - maybe two heaps
+3. Concrete examples - DIY
+    - Walk through an example and see what pops out. Reverse engineer your algorithm
+4. Case analysis
+    - Break down problems into smaller cases: Your cases can overlap. Just make sure you handle every possible case
+5. Iterative refinement - Brute-force improve
+    - Start with Brute-Force
+        - look for BUD - bottlenecks, unnecessary work, duplicated work 
+                - duplicated work you can often memoize 
+                - bottlenecks: can you think of some trick to bypass the slowest part of the algorithm? Maybe try trading space for time.
+                - unnecessary: 
+                    - Is there any part of the algorithm that could potentially be calculated quickly?
+                    - If the inputs are numerical, think of math or bitwise operations.
+                    - Doing a lot of comparing? Can you represent the info using a bit-vector?
+    - Ask yourself if you can brute-force by creating a base-case and then building the n+1 answer
+        - If the brute-force is recursive - you often memoize and use Dynamic Programming
+    - Try a solution that works most of the time or could potentially work. Can you "patch up" this approach somehow? 
+        - if you are testing if greedy works, create a case with a tie using the greedy criteria and see if you can "force" the wrong result
+    - If you need to go through all paths you'll probably need backtracking 
+        - backtracking is just DFS 
+            - but u prune bad paths and u to set up algorithm to not repeat
+            - so don't need to track visited states
+    - branch and bound is just BFS much like DFS is backtracking
+        - useful for optimization problem
+
+BCR - ask yourself is this most likely the optimal solution before checking the solution - if in interview trying asking them for expected run time of acceptable solution
+    - O(x^n) || O(n!)  - NP hard/backtracking
+    - O(n^2) || O(n^3)... - recursion, generate subset, nested loops - polynomial 
+    - O(nlgn) - sorting and heaps
+    - O(n) - iteration, pointer, sliding window
+    - O(lgn) - Binary search, exponentially sized step search
+    - O(1) - HashMap or index

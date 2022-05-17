@@ -1,0 +1,1 @@
+Problems where I had to apply some mathematical concept. Problems which felt more like an applied mathematical problem more then a "coding" problem.

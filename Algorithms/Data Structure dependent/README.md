@@ -1,0 +1,1 @@
+Algorithms are not data structure dependent. Put some algorithm are inefficient unless implemented using a specific data structure. So, they are practically data dependent on some data structure

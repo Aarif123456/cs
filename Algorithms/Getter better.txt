@@ -1,0 +1,85 @@
+Solving problem is closer to art than science. There is no step-by-step guide to solve leetcode problems.
+But, here is my approach for what it's worth
+
+Part 1: improve your basic problem-solving approach: CTCI's chapter on the technical question has a really good overview
+Alright, so for general problem-solving - first try to make sure you really understand the problem 
+This might mean drawing out the problem really quickly on paper, doing small example cases and working through them 
+- think about how you solved the problem and/or what does the problem remind you of
+Another good hint is looking at the underlying data structure if applicable: is this problem using a binary tree, graph or linked list -> that will significantly cut down on different approaches 
+Next, if no patterns are jumping out to you - then try solving with brute force
+ - e.g - how could you check every possible scenario 
+Remember a lot of algorithms are optimized brute-force e.g. DP, backtracking  - so sometimes the brute force solution gets you halfway there 
+If it's tough to solve the problem with brute-force - imagine you did this recursion - like can you break this down into sub-problems -> from there you could look at how to memoize duplicate work
+Think what you could change about the problem to make it easier to solve? Then can you use the solution from this new problem to solve the original solution somehow?
+
+Also, realize you have some techniques to solve tough problems, what did you do when you got stuck at other problems. Don't have much leetcode experience, no worries. How do you handle solve tough math problems. How do you get through tough courses? You already have a fair bit of problem solving experience, use that. 
+
+Part 2A: make sure you really understand different patterns that come up in a lot of interview problems 
+let's look at a few examples
+1.Let's look at DFS
+yes you know the DFS algorithm - but do you really understand it - 
+look at this problem: https://leetcode.com/problems/number-of-islands/ - why is this a good candidate for using DFS? - compare it with other DFS problems - what do they have in common?
+Think about what conditions have to be true in order to come up with a good solution and what your desired outcome is.
+
+2. hash tables - they look like magic on the surface - but how do they work underneath the surface? 
+- if you understand the concept behind them - it will easy to realize that if you have a fixed number of inputs that can easily be converted into unique integers
+ - you could be more efficient by using an array and use a function to map your input to the members of the array
+- this also let's keep track of the order
+So for this problem: https://leetcode.com/problems/first-unique-character-in-a-string/ 
+I only need to have an array of size 26 - to keep track of the count of the different alphabets
+You might see - keeping an array to track limited inputs as another pattern 
+- but it's really an extension of the principle that hash-tables operate on
+
+By developing your concepts further you will be able to think about how to use these principles in different ways to suit the problem at hand
+
+part 2B: how to develop your understanding
+So, when do you know if your surface-level understanding of different problems is good enough? - you should be able to quickly solve easy problems in those categories.
+But you have that down- now how can solve these pesky medium/hard and develop your understanding further?
+
+1: Go in blind and see if you get the solution on your own. When your approach is wrong, figure out why? THIS IS REALLY IMPORTANT! 
+Let's look at this problem: https://leetcode.com/problems/nim-game/
+When I first saw this problem - I thought it was a DP problem - which it could be - but there is a simpler solution 
+- what are some hints that could have helped me figure that out? 
+For example, I could do it manually for the first 10 n - and quickly suspect there might be an underlying pattern. Then test my assumption
+
+2:Allow yourself to get stuck on these problems - after 25-30 min feel free to check the problem category and/or discuss the title to make sure that your approach was not completely off base. 
+Let's look at this problem: https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/
+Imagine you figure out this is a DFS problem - but you can't get it to work
+Let yourself be stuck for an hour-ish+ - try to brainstorm - different ways to optimize the problem what can you use 
+Why is your approach not working? You'll surprise yourself with the progress you can make over the course of an hour. 
+
+practice: https://leetcode.com/problems/reverse-pairs/
+this is a problem that can be solved by applying merge sort - can you figure out how?
+
+
+3: Don't copy solutions blindly ever - Try to write down what you understood from reading a solution 
+- now go and implement it based on what you learned 
+- still wrong go back and compare the solution code to what you coded - what did they do differently?
+
+4: Take a break and come back to problems after - a problem super frustrating and you can't seem to wrap your head around it 
+ realize everyone feels like this from time to time
+- stop working on it - do another problem - stop leet-coding for a while - come back to it with a fresh mind
+
+What's a good sign that you need to take a step back? You are getting desperate smashing quick fixes together in the hopes of getting your solution to pass. Breath, analyze the problem. Analyze your solution, test your algorithm on paper, does it make sense, why or why not? Think about edge cases, think about weird parts of your code? Does it make sense for you to 20 lines to reverse two nodes in a linked list? Bloated code is often bad code, try to justify your complexity. Consider watching a video to review the pattern you are applying. 
+
+Remember no one cares how many hours you put in, it's about the concepts you build - don't sabotage yourself by adding code till your code works - the problem and your approach
+
+Part 3: create optimized solutions
+Alright, you should be at the point where you can at-least create solutions that get most of the cases. But, you keep getting timed out and you are struggling to create an optimized solution. 
+
+First, try the tried and true BUD method: 
+Bottleneck: What are the slowest part of your algorithm - can you remove them? speed it somehow? What you did some pre-computation - sorting takes O(nlog(n)) time
+- if you are current solution is more expensive - could sorting reduce the time complexity?
+
+Unnecessary work: Are there some part of the code you could eliminate somehow. 
+Think about representing the data with a different data structure
+Think about using Hashtables to memoize some answers. 
+Doing a lot of comparing? Can you represent the info using a bit-vector?
+
+Duplicated work: is some subproblem being solved multiple times? Can you store that info somewhere to quickly get the answer?
+
+Don't be disheartened if you struggle to get optimal solutions, it takes a lot of practice. Focus on learning trying to learn the concepts better. You will start getting a hang of it.
+
+Keep solving problems, coming up with solution and then comparing your solution to the best solution. Compare and contrast, list what they did differently and try to incorporate it.
+
+Next, be willing to look at "obscure" algorithms - not because you need that because they might give you insight on a different way to solve the problem 
